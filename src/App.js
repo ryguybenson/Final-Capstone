@@ -6,6 +6,10 @@ import ProjectDetails from './components/projects/ProjectDetails'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
 import CreateProject from './components/projects/CreateProject'
+import CreateForm from './components/new/Form'
+import Faq from './components/new/Faq'
+import Locations from './components/new/Locations'
+import Profile from './components/profile/Profile'
 
 
 class App extends Component {
@@ -20,7 +24,11 @@ class App extends Component {
             <Route path='/project/:id' component={ProjectDetails} />
             <Route path='/signin' component={SignIn} />
             <Route path='/signup' component={SignUp} />
+            <Route path='/form' component={CreateForm} />
             <Route path='/create' component={CreateProject} />
+            <Route path='/faq' component={Faq} />
+            <Route path='/locations' component={Locations} />
+            <Route path='/profile' component={Profile} />
           </Switch>
         </div>
       </BrowserRouter>
