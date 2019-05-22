@@ -11,6 +11,7 @@ import CreateForm from './components/forms/Form'
 import Faq from './components/new/Faq'
 import Locations from './components/new/Locations'
 import Profile from './components/profile/Profile'
+import MyCalendar from './components/calendar/Calendar'
 
 
 class App extends Component {
@@ -21,7 +22,7 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Switch>
-            <Route exact path='/'component={Dashboard} />
+            <Route exact path='/'component={Profile} />
             <Route path='/project/:id' component={ProjectDetails} />
             <Route path='/signin' component={SignIn} />
             <Route path='/signup' component={SignUp} />
@@ -30,6 +31,7 @@ class App extends Component {
             <Route path='/faq' component={Faq} />
             <Route path='/locations' component={Locations} />
             <Route path='/profile' component={Profile} />
+            <Route path='/calendar' component={MyCalendar} />
           </Switch>
         </div>
       </BrowserRouter>
