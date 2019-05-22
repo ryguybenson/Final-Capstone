@@ -5,7 +5,7 @@ export const createForm = (form) => {
     const firestore = getFirestore();
     const profile = getState().firebase.profile
     const authorId = getState().firebase.auth.uid
-    firestore.collection('form').add({
+    firestore.collection('forms').add({
       ...form,
       authorFirstName: profile.firstName,
       authorLastName: profile.lastName,
