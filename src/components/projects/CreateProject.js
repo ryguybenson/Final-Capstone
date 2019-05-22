@@ -34,7 +34,6 @@ class CreateProject extends Component {
     // console.log(this.state);
 
     this.props.createProject(this.state);
-
     this.props.history.push('/');
 
   }
