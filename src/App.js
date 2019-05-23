@@ -13,6 +13,7 @@ import Locations from './components/new/Locations'
 import Profile from './components/profile/Profile'
 import Schedule from './components/schedule/Schedule'
 import Dashschedule from './components/dashschedule/Dashschedule'
+import About from './components/new/About'
 
 
 class App extends Component {
@@ -20,7 +21,8 @@ class App extends Component {
   render() {
     
     var main = {
-      backgroundColor: '#E5EEF3'
+      backgroundColor: '#E5EEF3',
+      height: '100vh'
     }
     
     return (
@@ -38,6 +40,7 @@ class App extends Component {
             <Route path='/locations' component={Locations} />
             <Route path='/profile' component={Profile} />
             <Route path='/schedule' component={Schedule} />
+            <Route path='/about' component={About} />
           </Switch>
         </div>
       </BrowserRouter>

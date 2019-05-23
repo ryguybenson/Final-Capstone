@@ -27,10 +27,16 @@ class CreateSchedule extends Component {
   render() {
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to='/signout' />
+    var outer = {
+      padding: '2%'
+    }
+    var top = {
+      marginTop: '2%'
+    }
     return (
-      <div className="container">
+      <div className="container" style={top}>
         <form className="white" onSubmit={this.handleSubmit}>
-          <div>
+          <div style={outer}>
           <p>Select a date for your photoshoot</p>
           <input type='date' id='shoot' onChange={this.handleChange} />
           <p>Select a date for your reveal session</p>
@@ -38,7 +44,7 @@ class CreateSchedule extends Component {
           <p>Select a location for your reveal photoshoot</p>
           <input type='text' id='location' onChange={this.handleChange} />
           </div>
-          <div className="input-field">
+          <div className="input-field" style={outer}>
             <button className="btn pink lighten-1">Submit</button>
           </div>
         </form>

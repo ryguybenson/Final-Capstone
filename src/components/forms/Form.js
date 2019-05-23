@@ -30,22 +30,29 @@ class CreateForm extends Component {
   render() {
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to='/signout' />
+    var form = {
+      padding: '5%'
+    }
+    var outer = {
+      marginTop: '2%',
+      marginBottom: '2%'
+    }
     return (
-      <div className="container">
+      <div className="container" style={outer}>
         <form className="white" onSubmit={this.handleSubmit}>
-          <div>
+          <div style={form}>
           <p>How do you plan on enjoying your portraits (you may change your mind at anytime, it just gives me a better idea of what types of images to create for you)?</p>
           <input type='text' id='answerOne' onChange={this.handleChange} placeholder='Text'/>
           </div>
-          <div>
+          <div style={form}>
             <p>Describe your personality in as many adjectives as are fitting (shy, fun, outgoing, athletic, girly girl, guys guy, jokester, laid back, studious, sweet, obnoxious, loud, nature lover, urban, introvert, extrovert, home body, rule follower, adventurous, etc...)</p>
             <input type='text' id='answerTwo' onChange={this.handleChange} placeholder='Text'/>
           </div>
-          <div>
+          <div style={form}>
             <p>Please let me know your preferred locations fot the shoot or what type of location/background you would like (urban, river, meadow, trees, brick wall, your yard, sports field, your school, barn, junk yard, bridge, etc...)</p>
             <input type='text' id='answerThree' onChange={this.handleChange} placeholder='Text'/>
           </div>
-          <div>
+          <div style={form}>
             <p>Please provide a brief description of the outfits you'll be wearing. A couple things to leep in mind when selecting yout outfits:
               <br/>
               *Select outfits that you're comfortable in; you dont want to be worrying about straps that won't stay in place or other wardrobe issues.
@@ -54,15 +61,15 @@ class CreateForm extends Component {
             </p>
             <input type='text' id='answerFour' onChange={this.handleChange} placeholder='Text'/>
           </div>
-          <div>
+          <div style={form}>
             <p>Will you be bringing any props with you (sports equipment, and instrument, books, a pet, family or friends, etc...)</p>
             <input type='text' id='answerFive' onChange={this.handleChange} placeholder='Text'/>
           </div>
-          <div>
+          <div style={form}>
             <p>Please describe or attach pics of poses that you love and share any other thoughts and desires you have for your shoot</p>
             <input type='text' id='answerSix' onChange={this.handleChange} placeholder='Text'/>
           </div>
-          <div className="input-field">
+          <div className="input-field" style={form}>
             <button className="btn pink lighten-1">Submit</button>
           </div>
         </form>

@@ -1,5 +1,6 @@
 import React from 'react'
 import moment from 'moment'
+import { Link } from 'react-router-dom'
 
 const FormSummary = ({form}) => {
   
@@ -37,6 +38,9 @@ const FormSummary = ({form}) => {
         <p>Please describe or attach pics of poses that you love and share any other thoughts and desires you have for your shoot</p>
         <p>{form.answerSix}</p>
       </div>
+      <Link to={'/form/' + form.id} key={form.id}>
+        <button form={form}>Change</button>
+      </Link> 
     </div>
   )
 }
