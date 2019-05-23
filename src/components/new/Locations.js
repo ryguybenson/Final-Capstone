@@ -14,7 +14,7 @@ function Locations(){
   };
   var background = {
     backgroundImage: `url(${locations})`,
-    height: '1700px',
+    height: '100vh',
     backgroundSize: 'cover',
     overflow: 'hidden'
   }

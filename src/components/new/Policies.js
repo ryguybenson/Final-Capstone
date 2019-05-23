@@ -14,7 +14,7 @@ function Policies(){
   };
   var background = {
     backgroundImage: `url(${policies})`,
-    height: '900px',
+    height: '100vh',
     backgroundSize: 'cover',
     overflow: 'hidden'
   }

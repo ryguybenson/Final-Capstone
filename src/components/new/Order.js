@@ -14,7 +14,7 @@ function Order(){
   };
   var background = {
     backgroundImage: `url(${order})`,
-    height: '900px',
+    height: '100vh',
     backgroundSize: 'cover',
     overflow: 'hidden'
   }
