@@ -11,7 +11,8 @@ import CreateForm from './components/forms/Form'
 import Faq from './components/new/Faq'
 import Locations from './components/new/Locations'
 import Profile from './components/profile/Profile'
-import MyCalendar from './components/calendar/Calendar'
+import Schedule from './components/schedule/Schedule'
+import Dashschedule from './components/dashschedule/Dashschedule'
 
 
 class App extends Component {
@@ -31,7 +32,7 @@ class App extends Component {
             <Route path='/faq' component={Faq} />
             <Route path='/locations' component={Locations} />
             <Route path='/profile' component={Profile} />
-            <Route path='/calendar' component={MyCalendar} />
+            <Route path='/schedule' component={Schedule} />
           </Switch>
         </div>
       </BrowserRouter>
