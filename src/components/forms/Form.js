@@ -24,7 +24,7 @@ class CreateForm extends Component {
     e.preventDefault();
     // console.log(this.state);
     this.props.createForm(this.state);
-    this.props.history.push('/faq');
+    this.props.history.push('/schedule');
   }
 
   render() {

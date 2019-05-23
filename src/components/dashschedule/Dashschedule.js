@@ -15,9 +15,7 @@ class Dashschedule extends Component {
     return (
       <div className="dashboard container">
         <div className="row">
-          <div className="col s12 m6">
             <ScheduleList schedules={schedules} />
-          </div>
         </div>
       </div>
     )
@@ -35,6 +33,6 @@ const mapStateToProps = (state) => {
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([
-    { collection: 'schedules' }
+    { collection: 'schedules', limit: 1, orderBy: ['createdAt', 'desc'] }
   ])
 )(Dashschedule)

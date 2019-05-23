@@ -18,9 +18,14 @@ import Dashschedule from './components/dashschedule/Dashschedule'
 class App extends Component {
 
   render() {
+    
+    var main = {
+      backgroundColor: '#E5EEF3'
+    }
+    
     return (
       <BrowserRouter>
-        <div className="App">
+        <div className="App" style={main}>
           <Navbar />
           <Switch>
             <Route exact path='/'component={Profile} />

@@ -36,7 +36,7 @@ class CreateSchedule extends Component {
           <p>Select a date for your reveal session</p>
           <input type='date' id='reveal' onChange={this.handleChange} />
           <p>Select a location for your reveal photoshoot</p>
-          <input type='date' id='location' onChange={this.handleChange} />
+          <input type='text' id='location' onChange={this.handleChange} />
           </div>
           <div className="input-field">
             <button className="btn pink lighten-1">Submit</button>

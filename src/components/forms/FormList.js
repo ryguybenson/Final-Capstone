@@ -8,9 +8,9 @@ const FormList = ({forms}) => {
     <div className="form-list section">
       { forms && forms.map(form => {
         return (
-          <Link to={'/form/' + form.id} key={form.id}>
+
             <FormSummary form={form} />
-          </Link>
+
         )
       })}  
     </div>

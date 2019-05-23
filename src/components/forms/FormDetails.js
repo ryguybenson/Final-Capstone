@@ -26,7 +26,7 @@ const FormDetails = (props) => {
     )
   } else {
     return (
-      <div className="container center">
+      <div className="container">
         <p>Loading form...</p>
       </div>
     )

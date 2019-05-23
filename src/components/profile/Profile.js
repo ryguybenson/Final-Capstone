@@ -8,13 +8,8 @@ function Profile(){
   
   return(
     
-    <div>
+    <div className="center">
       <Dashschedule />
-      <div>
-        <Link to="/form">Form</Link> <br/>
-        <Link to="/Locations">Your Locations</Link> <br/>
-        <Link to="/faq">FAQ's</Link> <br/>
-      </div>
       <Dashboard />
     </div>
     
