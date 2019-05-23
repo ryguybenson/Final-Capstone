@@ -35,11 +35,14 @@ class CreateForm extends Component {
     }
     var outer = {
       marginTop: '2%',
-      marginBottom: '2%'
+      marginBottom: '6%'
     }
     return (
       <div className="container" style={outer}>
-        <form className="white" onSubmit={this.handleSubmit}>
+        <div className="card-panel center">
+          <h3>Please fill out the Questionare</h3>
+        </div>
+        <form className="card-panel white" onSubmit={this.handleSubmit}>
           <div style={form}>
           <p>How do you plan on enjoying your portraits (you may change your mind at anytime, it just gives me a better idea of what types of images to create for you)?</p>
           <input type='text' id='answerOne' onChange={this.handleChange} placeholder='Text'/>

@@ -22,7 +22,8 @@ class App extends Component {
     
     var main = {
       backgroundColor: '#E5EEF3',
-      height: '100vh'
+      height: '100%',
+      minHeight: '100vh'
     }
     
     return (
