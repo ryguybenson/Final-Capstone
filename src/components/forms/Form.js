@@ -40,7 +40,7 @@ class CreateForm extends Component {
     return (
       <div className="container" style={outer}>
         <div className="card-panel center">
-          <h3>Please fill out the Questionare</h3>
+          <h3>Please fill out the Questionnare</h3>
         </div>
         <form className="card-panel white" onSubmit={this.handleSubmit}>
           <div style={form}>

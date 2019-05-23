@@ -10,6 +10,8 @@ import CreateProject from './components/projects/CreateProject'
 import CreateForm from './components/forms/Form'
 import Faq from './components/new/Faq'
 import Locations from './components/new/Locations'
+import Order from './components/new/Order'
+import Policies from './components/new/Policies'
 import Profile from './components/profile/Profile'
 import Schedule from './components/schedule/Schedule'
 import Dashschedule from './components/dashschedule/Dashschedule'
@@ -39,6 +41,8 @@ class App extends Component {
             <Route path='/create' component={CreateProject} />
             <Route path='/faq' component={Faq} />
             <Route path='/locations' component={Locations} />
+            <Route path='/order' component={Order} />
+            <Route path='/policies' component={Policies} />
             <Route path='/profile' component={Profile} />
             <Route path='/schedule' component={Schedule} />
             <Route path='/about' component={About} />
